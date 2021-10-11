@@ -1,21 +1,0 @@
-spring:
-  datasource:
-    url: jdbc:oracle:thin:@//localhost:1521/XEPDB1
-    username: hr
-    password: hr
-  jpa:
-    show-sql: true   info:  build:      artifactId: '@project.artifact@'
-      groupId: '@project.groupId@'
-  java:
-    version: 8.0    
-   
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-        - "*"
-  endpoint:    shutdown:      enabled: true      
-        
-server:  port: 6060  
-  
